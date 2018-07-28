@@ -7,6 +7,8 @@ var myInput = document.getElementById('userphoto');
 function sendPic() {
     var file = myInput.files[0];
 console.log(file);
+
+
     // Send file here either by adding it to a `FormData` object
     // and sending that via XHR, or by simply passing the file into
     // the `send` method of an XHR instance.
@@ -14,4 +16,3 @@ console.log(file);
 
 myInput.addEventListener('change', sendPic, false);
 </script>
- 
