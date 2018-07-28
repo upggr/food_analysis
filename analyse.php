@@ -7,7 +7,7 @@ $fileName = 'download.jpeg';
 $image = file_get_contents($fileName);
 $response = $imageAnnotator->labelDetection($image);
 $labels = $response->getLabelAnnotations();
-
+ 
 if ($labels) {
     echo("Labels:" . PHP_EOL);
     foreach ($labels as $label) {
